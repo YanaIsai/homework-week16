@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+
+}
+
+form {
+width: 500px;
+margin: 0 auto;
+padding-top: 50px;
+}
+
+.container {
+    width: inherit;
+    height: 65px;
+
+}
+
+.container__gender {
+    width: inherit;
+    height: 35px;
+}
+
+.container__pass{
+    width: inherit;
+    height: 90px;
+}
+
+.input-field {
+    width: inherit;
+    height: 40px;
+}
+
+.error {
+    font-size: 13px;
+    color: brown;
+}
+
+#submitButton {
+height: 40px;
+width: 150px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}

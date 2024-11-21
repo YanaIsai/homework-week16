@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <form name="myForm" class="myForm">
+        <div class='container'>
+            <h1>Регистрация</h1>
+        </div>
+        <div class='container'>
+            <input name="username" class="input-field" type="text" id="username" placeholder="Имя пользователя"
+                minlength="2" maxlength="20" required/>
+            <span class="error" id="usernameError"></span>
+        </div>
+        <div class='container'>
+            <input name="email" type="email" class="input-field" id="email" placeholder="Введите Email" required/>
+            <span class="error" id="emailError"></span>
+        </div>
+        <div class='container'>
+            <input name="age" class="input-field" id="age" type="number" placeholder="Введите возраст" required/>
+            <span class="error" id="ageError"></span>
+        </div>
+        <div class='container__gender'>
+            <span>Ваш пол:</span>
+            <label for="maleOption">Мужской</label>
+            <input type="radio" id="maleOption" name="option" value="maleOption">
+            <label for="femaleOption">Женский</label>
+            <input type="radio" id="femaleOption" name="option" value="femaleOption">
+            <span class="error" id="genderError"></span>
+        </div>
+        <div class='container'>
+            <select name="select" id="select" class="input-field" required>
+                <option value="" disabled selected hidden>Ваша профессия</option>
+                <option value="job1">Врач</option>
+                <option value="job2">Программист</option>
+                <option value="job3">Учитель</option>
+                <option value="job4">Дизайнер</option>
+                <option value="job5">Инженер</option>
+                <option value="job6">Продавец</option>
+                <option value="job7">Другое</option>
+            </select>
+            <span class="error" id="jobError"></span>
+        </div>
+        <div class='container__pass'>
+            <input name="password" type="password" class="input-field" id="password" minlength="8"
+                placeholder="Придумайте пароль" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required/>
+            <span class="error" id="passwordError"></span>
+        </div>
+        <div class='container'>
+            <input type="checkbox"  name="agreeTerms" id="agreeTerms" required/>
+            <label for="agreeTerms">Я согласен с условиями</label>
+            <span class="error" id="termsError"></span>
+        </div>
+
+        <div class='container'>
+            <button type="submit" id="submitButton">Отправить</button>
+        </div>
+    </form>
+
+    <script src='/script.js'></script>
+</body>
+
+</html>
